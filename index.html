@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js.js"></script>
+
     <title>Grupo Cero </title>
   </head>
     <body>
@@ -43,7 +46,7 @@
                         <li class="nav-item d-flex lead ">
                             <a class="btn btn-primary align-self-center lead"  href="#" >Registrate</a>
                         <li class="nav-item d-flex ">
-                            <a class="nav-link text-dark align-self-center" href="#">
+                            <a class="nav-link text-dark align-self-center" href="./buscador.html">
                                 <i class="fas fa-search"></i>
                             </a>
                         </li>
@@ -52,6 +55,12 @@
                 </div>
             </div>
         </nav>
+
+        <div class="alert alert-secondary alert-dismissible fade show text-center" role="alert">
+            <i class="fas fa-info-circle"></i>
+            <strong >Presione la lupa para una busqueda más personalizada</strong> 
+            <button type="button"  data-bs-dismiss="alert" aria-label=""></button>
+        </div> 
 
         <section class="tamaño d-flex bg-light bg-info">
             <div class="container align-self-center  ">
@@ -250,6 +259,7 @@
                                 <a class="btn btn-primary" style="background-color: #ac2bac;" href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> </a>
                                 <a class="btn btn-primary" style="background-color: #0082ca;" href="https://cl.linkedin.com/"> <i class="fab fa-linkedin-in"></i> </a>
                                 <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/DiegoDonoso1/Grupo-cero-Artistas"  ><i class="fab fa-github"></i> </a>
+                                <p class="mt-4" id="tiempo"></p>
                             </div>
                         </div>
                     </div>
